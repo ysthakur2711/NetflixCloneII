@@ -8,8 +8,6 @@ const movieRoute = require("./routes/movies");
 const listRoute = require("./routes/lists");
 const cors = require('cors');
 
-const port  = process.env.PORT | 4000
-
 dotenv.config();
 app.use(cors()); 
 
@@ -33,6 +31,6 @@ app.get('/',(req,res)=>{
   res.send("Hello World ji kaise ho saare!!");
 })
 
-app.listen(port, () => {
-  console.log(`Backend server is running ${port}!`);
+app.listen(8800, () => {
+  console.log("Backend server is running 8800!");
 });
