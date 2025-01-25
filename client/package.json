@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://netflixcloneii-backend.onrender.com"
+  "proxy": "https://netflixcloneii-backend.onrender.com/api/"
 }
