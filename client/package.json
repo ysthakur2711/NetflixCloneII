@@ -40,4 +40,5 @@
     ]
   },
   "proxy": "https://netflixcloneii-backend.onrender.com/api/"
+         
 }
