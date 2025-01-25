@@ -22,7 +22,7 @@ export default function Watch() {
       <iframe 
       width="100%" 
       height="100%" 
-      src={`./HollyWoodMovies/${movie._id}.mp4`} 
+      src="https://www.youtube.com/embed/a8HeAvHBmzk?si=ETl6xXZzTTnFMSmj" 
       title="YouTube video player"
       frameborder="0" 
       allow="accelerometer; 
