@@ -8,6 +8,8 @@ const movieRoute = require("./routes/movies");
 const listRoute = require("./routes/lists");
 const cors = require('cors');
 
+const port  = process.env.PORT | 4000
+
 dotenv.config();
 app.use(cors()); 
 
@@ -22,15 +24,15 @@ mongoose
 
 app.use(express.json());
 
-app.use("/api/auth", authRoute);
-app.use("/api/users", userRoute);
-app.use("/api/movies", movieRoute);
-app.use("/api/lists", listRoute);
+app.use("/auth", authRoute);
+app.use("/users", userRoute);
+app.use("/movies", movieRoute);
+app.use("/lists", listRoute);
 
 app.get('/',(req,res)=>{
   res.send("Hello World ji kaise ho saare!!");
 })
 
-app.listen(8800, () => {
-  console.log("Backend server is running!");
+app.listen(port, () => {
+  console.log(`Backend server is running ${port}!`);
 });
