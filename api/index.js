@@ -8,7 +8,7 @@ const movieRoute = require("./routes/movies");
 const listRoute = require("./routes/lists");
 const cors = require('cors');
 
-const port  = process.env.PORT | 4000
+const port  = 8800
 
 dotenv.config();
 app.use(cors()); 
